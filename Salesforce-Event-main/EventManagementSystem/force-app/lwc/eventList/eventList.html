@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="Upcoming Events">
+        <lightning-datatable
+            key-field="Id"
+            data={events}
+            columns={columns}
+            onrowaction={handleRowAction}>
+        </lightning-datatable>
+    </lightning-card>
+</template>

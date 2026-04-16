@@ -1,0 +1,6 @@
+<template>
+    <c-event-list oneventselect={handleEventSelect}></c-event-list>
+    <template if:true={selectedEventId}>
+        <c-attendee-list event-id={selectedEventId}></c-attendee-list>
+    </template>
+</template>
